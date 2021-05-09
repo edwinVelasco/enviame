@@ -2,12 +2,12 @@
 #### Ejercicios de prueba para la vacante de backend en enviame
 ***
 ### Índice
-1. [Punto 1 y 2](#punto12)
-2. [Punto 3](#punto3)
-3. [Punto 4](#punto4)
-4. [Punto 5](#punto5)
-5. [Punto 6](#punto6)
-6. [Punto 7](#punto7)
+1. [Punto 1 y 2](#punto-1-y-2)
+2. [Punto 3](#punto-3)
+3. [Punto 4](#punto-4)
+4. [Punto 5](#punto-5)
+5. [Punto 6](#punto-6)
+6. [Punto 7](#punto-7)
 ***
 
 #### Punto 1 y 2:
@@ -26,8 +26,8 @@
  - El primer servicio que se debe ejecutar es el que resuelve el requerimiento de utilización de una libreria faker
  ```json
  {
-    url: http://localhost/api/company/faker
-    method: POST
+    url: "http://localhost/api/company/faker"
+    method: "POST"
     body:
     {
         "n": "120"
@@ -50,3 +50,36 @@
 
 ***
 #### Punto 4:
+
+
+
+
+
+
+
+***
+
+#### Punto 5:
+ - El punto 5 se desarrollo con Python 3.8
+ - Para la ejecución del mismo se debe tener instalado cualquier versión de python 3.x
+ [Punto_5/script.py](https://github.com/edwinVelasco/enviame/blob/main/Punto_5/script.py)
+ ```shell script
+    $ cd Punto_3
+    $ python script.py
+```
+
+***
+
+#### Punto 6:
+ - El punto 5 se desarrollo con Python 3.8
+ - Para la ejecución del mismo se debe tener instalado cualquier versión de python 3.x
+ [Punto_6/script.py](https://github.com/edwinVelasco/enviame/blob/main/Punto_6/script.py)
+ ```shell script
+    $ cd Punto_3
+    $ python script.py
+```
+***
+
+#### Punto 7:
+
+- 
