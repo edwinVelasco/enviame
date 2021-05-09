@@ -1,0 +1,34 @@
+version: "3.7"
+
+services:
+    postgres:
+        image: postgres:12.6
+        ports:
+            - "5432:5432"
+        environment:
+            POSTGRES_PASSWORD: "12345"
+            POSTGRES_USER: admin
+            PGDATA: "/var/lib/postgresql/data/pgdata"
+            POSTGRES_DB: "test-enviame"
+    mongo:
+        image: mongo:4.2.14-bionic
+        ports: 
+            - "27017:27017"
+    crud:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        container_name: crud-server
+        hostname: crud-server
+        ports:
+            - "8080:8080"
+        links: 
+            - mongo
+    nginx:
+        build:
+            context: ./nginx/
+            dockerfile: Dockerfile
+        ports:
+            - "80:80"
+        depends_on: 
+            - crud

@@ -20,14 +20,14 @@
 					}
 				},
 				"url": {
-					"raw": "{{url}}/api/company/60972d83143d0a1c1602d510",
+					"raw": "localhost/api/company/6098454ae736e60012100e48",
 					"host": [
-						"{{url}}"
+						"localhost"
 					],
 					"path": [
 						"api",
 						"company",
-						"60972d83143d0a1c1602d510"
+						"6098454ae736e60012100e48"
 					]
 				},
 				"description": "Actualización de información, se debe buscar el _id de una empresa del listado de empresas, name y nit son campos requeridos"
@@ -41,7 +41,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"name\": \"Udes\",\n    \"nit\": \"22456788\",\n    \"\"\n}",
+					"raw": "{\n    \"name\": \"Udes\",\n    \"nit\": \"22456788\",\n    \"description\": \"Corporis neque quia iusto itaque sapiente quas libero omnis. Vel magnam tempora.\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -49,9 +49,9 @@
 					}
 				},
 				"url": {
-					"raw": "{{url}}/api/company",
+					"raw": "localhost/api/company",
 					"host": [
-						"{{url}}"
+						"localhost"
 					],
 					"path": [
 						"api",
@@ -68,9 +68,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{url}}/api/company?page=2&limit=10",
+					"raw": "localhost/api/company?page=1&limit=10",
 					"host": [
-						"{{url}}"
+						"localhost"
 					],
 					"path": [
 						"api",
@@ -89,7 +89,7 @@
 						},
 						{
 							"key": "page",
-							"value": "2"
+							"value": "1"
 						},
 						{
 							"key": "limit",
@@ -107,9 +107,9 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{url}}/api/company/6097068de0b316171b273a2f/",
+					"raw": "localhost/api/company/6097068de0b316171b273a2f/",
 					"host": [
-						"{{url}}"
+						"localhost"
 					],
 					"path": [
 						"api",
@@ -137,9 +137,9 @@
 					}
 				},
 				"url": {
-					"raw": "{{url}}/api/company/faker",
+					"raw": "localhost/api/company/faker",
 					"host": [
-						"{{url}}"
+						"localhost"
 					],
 					"path": [
 						"api",
