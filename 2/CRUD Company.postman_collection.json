@@ -1,0 +1,155 @@
+{
+	"info": {
+		"_postman_id": "dd9b658f-2110-4c2a-8b6e-8420469c2c55",
+		"name": "CRUD Company",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Edit company",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Harber, Kessler and Kovacek\",\n    \"nit\": \"17264026\",\n    \"description\": \"Corporis neque quia iusto itaque sapiente quas libero omnis. Vel magnam tempora.\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/company/60972d83143d0a1c1602d510",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"company",
+						"60972d83143d0a1c1602d510"
+					]
+				},
+				"description": "Actualización de información, se debe buscar el _id de una empresa del listado de empresas, name y nit son campos requeridos"
+			},
+			"response": []
+		},
+		{
+			"name": "Create company",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Udes\",\n    \"nit\": \"22456788\",\n    \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/company",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"company"
+					]
+				},
+				"description": "Creación de empresas name y nit son obligatorios, el campo description no lo es"
+			},
+			"response": []
+		},
+		{
+			"name": "List companies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/company?page=2&limit=10",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"company"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "udes",
+							"disabled": true
+						},
+						{
+							"key": "nit",
+							"value": "123",
+							"disabled": true
+						},
+						{
+							"key": "page",
+							"value": "2"
+						},
+						{
+							"key": "limit",
+							"value": "10"
+						}
+					]
+				},
+				"description": "Listado de empresas paginadas"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete company",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/company/6097068de0b316171b273a2f/",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"company",
+						"6097068de0b316171b273a2f",
+						""
+					]
+				},
+				"description": "Eliminación de empresas por su id de mongo"
+			},
+			"response": []
+		},
+		{
+			"name": "Faker company",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"n\": \"120\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/company/faker",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"company",
+						"faker"
+					]
+				},
+				"description": "Creación de n cantidad de empresas"
+			},
+			"response": []
+		}
+	]
+}
