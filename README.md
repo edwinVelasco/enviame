@@ -39,7 +39,7 @@
 
 ***
 
-#### Punto 3
+#### Punto 3:
  - El punto 3 se desarrollo con Python 3.8
  - Para la ejecución del mismo se debe tener instalado cualquier versión de python 3.x
  [Punto_3/script.py](https://github.com/edwinVelasco/enviame/blob/main/Punto_3/script.py)
@@ -49,4 +49,4 @@
 ```
 
 ***
-#### Punto 4
+#### Punto 4:
