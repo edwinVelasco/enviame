@@ -47,11 +47,12 @@
     $ cd Punto_3
     $ python script.py
 ```
+ - En la ejecución del script se calcula el tiempo de duración de la misma
 
 ***
 #### Punto 4:
 
-
+.......
 
 
 
@@ -67,19 +68,32 @@
     $ cd Punto_3
     $ python script.py
 ```
-
+ - En la ejecución del script se calcula el tiempo de duración de la misma
 ***
 
 #### Punto 6:
- - El punto 5 se desarrollo con Python 3.8
+ - El punto 6 se desarrollo con Python 3.8
  - Para la ejecución del mismo se debe tener instalado cualquier versión de python 3.x
  [Punto_6/script.py](https://github.com/edwinVelasco/enviame/blob/main/Punto_6/script.py)
  ```shell script
     $ cd Punto_3
     $ python script.py
 ```
+ - En la ejecución del script se calcula el tiempo de duración de la misma
 ***
 
 #### Punto 7:
-
-- 
+ - En el punto 7 se presentan dos soluciones, una para PostgreSQL y la otra para SQL Server.
+ - Se realizo un modelo de entidad relación tentativo para las tablas del ejercicio [model](https://github.com/edwinVelasco/enviame/blob/main/Punto_7/model.png). 
+ - Se encuentran en [Punto_7](https://github.com/edwinVelasco/enviame/tree/main/Punto_7)
+ ##### PostgreSQL
+ - La solución de postgres se presenta en la carpeta [Postgresql](https://github.com/edwinVelasco/enviame/tree/main/Punto_7/Postgresql)
+ - Se presentan el archivo [script_init.sql](https://github.com/edwinVelasco/enviame/blob/main/Punto_7/Postgresql/script_init.sql) en la cual se encuentra las instrucciones re registro de las tablas
+ - En el archivo [query.sql](https://github.com/edwinVelasco/enviame/blob/main/Punto_7/Postgresql/query.sql) se encuentra la cunsulta de modificación requerida y la consulta de una visual de como quedan los datos despues de la actualización
+ - Ejecutar las dos consultas individuales.
+ 
+ #### SQL Server
+ - La solución de sqlserver se presenta en la carpeta [SQL Server](https://github.com/edwinVelasco/enviame/tree/main/Punto_7/SQL%20Server)
+ - Se presentan el archivo [script_init.sql](https://github.com/edwinVelasco/enviame/blob/main/Punto_7/SQL%20Server/script_init.sql) en la cual se encuentra las instrucciones re registro de las tablas
+ - En el archivo [query.sql](https://github.com/edwinVelasco/enviame/blob/main/Punto_7/SQL%20Server/query.sql) se encuentra la cunsulta de modificación requerida y la consulta de una visual de como quedan los datos despues de la actualización
+ - Ejecutar las dos consultas individuales.
