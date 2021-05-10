@@ -51,12 +51,18 @@
 
 ***
 #### Punto 4:
-
-.......
-
-
-
-
+- Este punto se desarrollo con python y el registro de los datos se hizo en Firebase
+- Para la ejecución previa del script se deben intalar unas librerias requeridas
+- se pueden instalar de la siguiente manera en un entorno virtual de python o en la instancia de preferencia
+ ```shell script
+    $ cd Punto_4
+    $ pip install -r requirements.txt
+    $ python script.py
+```
+- Al ejecutar el script se consume el servicio de la API envíame
+- La respuesta es almacenada en Firebase
+- AL finalizar se listan los registros guardados
+- Dar Enter o Ctr+C para cerrar el interprete al terminar de listar los registros.
 
 ***
 

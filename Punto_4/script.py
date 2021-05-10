@@ -10,6 +10,10 @@ class Service():
     
     def __init__(self):
         self.__firebase = firebase.FirebaseApplication(self.DATABASE, None)
+        authentication = firebase.FirebaseAuthentication('62P2zxKABaLze21VCmAJzZxtex2tYmBbBsSVF02m', 
+                                                         'edwinalbertovelasco8@gmail.com', 
+                                                         extra={'id': 123})
+        self.__firebase.authentication = authentication
 
     def registed_data(self, data):
         res_envia = requests.post(url=self.SERVICE_ENVIAME, json=data,
@@ -61,9 +65,12 @@ DATA_ENVIAME = {"shipping_order": {
 service = Service()
 res = service.registed_data(data=DATA_ENVIAME)
 print(res.get('name'), 'Nuevo envío guardado en Firebase')
-print('_______________________________')
+print('', )
 
 list_shipping = service.get_data_firebase()
+
+print('--- listado de registros ---')
+print('', )
 
 for shipping in list(list_shipping):
     data = list_shipping.get(shipping, dict()).get('data', dict())
@@ -71,6 +78,5 @@ for shipping in list(list_shipping):
     print('tracking_number', data.get('tracking_number'))
     print('identifier', data.get('identifier'))
     print('imported_id', data.get('imported_id'))
-    print(',')
-
+    print('',)
 
