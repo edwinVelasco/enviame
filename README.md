@@ -12,7 +12,7 @@
 
 #### Punto 1 y 2:
 
- - ingresar a la carpeta para la ejecución del docker-compose
+ - ingresar a la carpeta [Punto_1_2](https://github.com/edwinVelasco/enviame/tree/main/Punto_1_2) para la ejecución del docker-compose
 ```shell script
     $ cd Punto_1_2/crud
     $ docker-compose up -d
