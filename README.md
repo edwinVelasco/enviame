@@ -20,8 +20,8 @@
 ```
  - El punto 1 se abordo con una instancia de nginx, node y postgresql para desplegar sitios web con nodejs y postgresql, se puede observar la configuración en el archivo [docker-compose.yml](https://github.com/edwinVelasco/enviame/blob/main/Punto_1_2/crud/docker-compose.yml)
  - El punto 2, es abordado con un servicio REST con mongoDB, NodeJS (Express) y nginx.
- - Para probar los servicios se debe importar el siguiente archivo en [postman](https://www.postman.com/)
- [CRUD Company.postman_collection.json](https://github.com/edwinVelasco/enviame/blob/main/Punto_1_2/CRUD%20Company.postman_collection.json)
+ - Para probar los servicios se debe importar el siguiente archivo 
+ [CRUD Company.postman_collection.json](https://github.com/edwinVelasco/enviame/blob/main/Punto_1_2/CRUD%20Company.postman_collection.json) en [postman](https://www.postman.com/)
  - Se creó el modelo de empresa con {name, nit, description}
  - El primer servicio que se debe ejecutar es el que resuelve el requerimiento de utilización de una libreria faker
  ```json
