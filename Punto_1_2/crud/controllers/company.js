@@ -43,7 +43,7 @@ const companyPut = async (req, res) => {
 
     const company = await Company.findByIdAndUpdate(id, others)
 
-    res.status(200).json(
+    res.status(204).json(
         {
             company
         }
@@ -52,7 +52,7 @@ const companyPut = async (req, res) => {
 
 const companyPatch = (req, res) => {
     const { id } = req.params
-    res.status(200).json(
+    res.status(204).json(
         {
             msg: 'patch',
             id
@@ -65,7 +65,7 @@ const companyDelete = async (req, res) => {
     const company = await Company.findByIdAndUpdate(
         id, {enable: false})
 
-    res.status(200).json(
+    res.status(204).json(
         {
             company,
             msg: 'company is '

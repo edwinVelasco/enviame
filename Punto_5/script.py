@@ -2,7 +2,9 @@ from time import time
 list_fibonacci = [1, 1]
 
 
-def get_next_fibonachi():
+def get_next_fibonachi(list_f: list = None):
+    if list_f is not None:
+        list_fibonacci = list_f
     next_list = [list_fibonacci[-1], sum(list_fibonacci)]
     return next_list
 
@@ -21,14 +23,14 @@ def get_divider(number: int):
         divider += 1
     return count
 
+if __name__ == '__main__':
+    start_time = time()
+    while True:
+        list_fibonacci = get_next_fibonachi()
+        count_divider = get_divider(list_fibonacci[-1])
 
-start_time = time()
-while True:
-    list_fibonacci = get_next_fibonachi()
-    count_divider = get_divider(list_fibonacci[-1])
-
-    if count_divider >= 1000:
-        print(count_divider, list_fibonacci[-1])
-        break
-elapsed_time = time() - start_time
-print('End Process: ', elapsed_time)
+        if count_divider >= 1000:
+            print(count_divider, list_fibonacci[-1])
+            break
+    elapsed_time = time() - start_time
+    print('End Process: ', elapsed_time)
